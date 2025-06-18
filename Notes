@@ -21,12 +21,19 @@ GitHub is just the management of your files
 - merge: often done with branches; you merge two files into one without loosing the content of one of them
 
 How can you make a file that is not directly uploaded into Git (is invisible) 
-	You can create a .gitignore file in your repository's root directory to tell Git which files and directories to ignore when you make a commit. 
-	To share the ignore rules with other users who clone the repository, commit the .gitignore file in to your repository.
+	You can only make it on Git Hub desktop so it won't be uploaded to the global Hub. Go into Visual Studio Code and create a file (or use on that already exists)
+	that is named .gitignore. in there you write the name of the file that you want to have ignored. Now you can write into the selected files and it will not 
+	detect changes in the Desktop GitHub. 
+How to roll everything back to the last commit? 
+	RIght-click the Branch in which you made the changes and click on "revert" until you are back to where you want to go back.
 How to discard all the changes? 
-
+	Right-click on the file or the branch that you want to discard the changes in GitHub Desktop and select "discard all changes"
 How to discard all changes temporarily?
-
+	If you want to be able to restore the discarded changes you need to put them into a Stash. This stash can be restored and with that all the changes that you 
+	did within these stashes are restored as well. 
 How can you delete all untracked files from your local folder? 
-
+	It's also an option when you right-click. 
 What is the difference between the merge strategies: _merge, rebase, squash_
+	- merge: it adds a new commit but all the files are beeing kept
+	- rebase: it takes the commits so the feature starts before the master and attaches it infront of it
+	- squash: it combines the features/changes and they can't be that easily overwritten as in rebase; it's only one feature then and more clean/short
