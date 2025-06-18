@@ -1,1 +1,11 @@
+You can search data from your computer in visual studio code
 
+	- Git: instant Backup, version control system - you can go back to different versions of the code to find out where the problem lies 
+	- Node: allows us to use Java script outside of browsers/without browsers; for running server software 
+	- TS (type script): trans piled Java file, compiled into Java 
+	- VSC (visual studio code): overall platform where we code 
+		○ Git Graph: to visualize what happens in the cod in Git; get an overview of what happens in Git
+		○ ESLint: helps to keep your program clean; shows you errors that need to be fixed 
+
+GitHub is not Git!! 
+GitHub is just the management of your files 
