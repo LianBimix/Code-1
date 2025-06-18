@@ -37,3 +37,10 @@ What is the difference between the merge strategies: _merge, rebase, squash_
 	- merge: it adds a new commit but all the files are beeing kept
 	- rebase: it takes the commits so the feature starts before the master and attaches it infront of it
 	- squash: it combines the features/changes and they can't be that easily overwritten as in rebase; it's only one feature then and more clean/short
+
+1. What does Visual Studio Code mean by "Sync Changes"?
+	
+2. What does the ".git" folder do in your project? (turn on hidden files and file extensions if you don't see it)
+3. How does Git differ from e.g. Dropbox or Google Drive?
+	- Why not use those instead of Git?
+4. Why is Git called Git?
