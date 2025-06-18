@@ -19,3 +19,13 @@ GitHub is just the management of your files
 - pull: same as fetch but it chances the files 
 - push: when you push files that you commited from your local computer from the database into the Hub; it is in the back and you don't notice it 
 - merge: often done with branches; you merge two files into one without loosing the content of one of them
+
+How can you make a file that is not directly uploaded into Git (is invisible) 
+
+How to discard all the changes? 
+
+How to discard all changes temporarily?
+
+How can you delete all untracked files from your local folder? 
+
+What is the difference between the merge strategies: _merge, rebase, squash_
