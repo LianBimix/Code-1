@@ -9,3 +9,13 @@ You can search data from your computer in visual studio code
 
 GitHub is not Git!! 
 GitHub is just the management of your files 
+
+- Repository: the database
+- Commit: changes of setup; adding of changes; setting of changes
+- Branch: something inparallel; everyone has their own so there won't be conflicts with other contributers while working on the ssame file 
+- Remote: for example Git Hub
+- stage: a change you want to commit; adding changes
+- fetch: when you take something from Git Hub to your local computer without changing the files
+- pull: same as fetch but it chances the files 
+- push: when you push files that you commited from your local computer from the database into the Hub; it is in the back and you don't notice it 
+- merge: often done with branches; you merge two files into one without loosing the content of one of them
