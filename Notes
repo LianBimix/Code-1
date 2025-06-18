@@ -21,7 +21,8 @@ GitHub is just the management of your files
 - merge: often done with branches; you merge two files into one without loosing the content of one of them
 
 How can you make a file that is not directly uploaded into Git (is invisible) 
-
+	You can create a .gitignore file in your repository's root directory to tell Git which files and directories to ignore when you make a commit. 
+	To share the ignore rules with other users who clone the repository, commit the .gitignore file in to your repository.
 How to discard all the changes? 
 
 How to discard all changes temporarily?
