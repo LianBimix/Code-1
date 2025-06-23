@@ -86,3 +86,41 @@ HTML:
 		~ use the dev tools and you can change whatever you like in the content without letting it affect the file
 	> what the DOM (Document Object Model) is
 		~ an internal representation; the Binary code from the browser is displayed as text, not 0 and 1
+
+1. Which tags exist?
+	~ <html> 
+	~ <head> 
+	~ <title> 
+	~ <body> 
+	~ <h1> to <h6> (Headline)
+	~ <p> (paragraph)
+	~ <a> (link)
+	~ <div> 
+	~ <span> 
+	~ <img> 
+	~ <ol> 
+	~ <ul> 
+	~ <li> 
+	~ <table> 
+	~ <tr> 
+	~ <td> 
+	~ <th> 
+	~ <form> 
+	~ <input> 
+	~ <button> 
+	~ <header>
+	~ <footer>
+	~ <nav>
+	~ <article>
+	~ <aside>
+	~ <audio>
+2. Categorize the tags.
+	
+3. What are standard attributes (except style)
+	- for all tags
+		~ <body>, <html>, <head>, <title>
+	- for the specific categories of tags
+	- for some particular tags only
+4. Experiment with tags:
+	- Create a page with at least one tag of each category.
+	- Create a page with a variety of form elements.
