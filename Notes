@@ -84,5 +84,5 @@ HTML:
 		~ nothing changes
 	> how to change the contents displayed without changing the file 
 		~ use the dev tools and you can change whatever you like in the content without letting it affect the file
-	> what the DOM is
+	> what the DOM (Document Object Model) is
 		~ an internal representation; the Binary code from the browser is displayed as text, not 0 and 1
