@@ -44,3 +44,25 @@ What is the difference between the merge strategies: _merge, rebase, squash_
 3. How does Git differ from e.g. Dropbox or Google Drive?
 	- Why not use those instead of Git?
 4. Why is Git called Git?
+
+
+HTML:
+1. Find out the meaning of the akronym HTML
+> HyperText (text that contains links to other texts) Markup Language
+	- Who created it and when and why? 
+		> created by Tim Berners-Lee in 1991; the World wide Web (also created by him) was invented in 1989
+		> it was created to structure documents and make information for users more accessible 
+	- What are the origins of "markup"?
+		> comes from printing and publishing age; manuscripe was sent to printing companies and someone there structured the text into headlines, footnote, etc.
+		> 
+		> it was meant to be a universal language that indicates document structures and semantics using tags and/or codes
+		> seperates the structure from the presentation 
+2. What is Syntax, what is Semantics? Recognize the difference!
+	> Syntax defines the rules of the code, how code or tag has to be written so that it works; used for structure; "Is it written correctly?"
+	> Semantics defines what the code actually does or represents; used for interpretation; "Does it makes sense?"
+3. Time travel to the first browsers
+	- Find a simulation
+		> way back machine
+		> Archive today
+	- Find the first website
+		> https://web.archive.org/web/19961019212557/http://bnsf.com/
