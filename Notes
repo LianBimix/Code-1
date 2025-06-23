@@ -87,40 +87,213 @@ HTML:
 	> what the DOM (Document Object Model) is
 		~ an internal representation; the Binary code from the browser is displayed as text, not 0 and 1
 
-1. Which tags exist?
-	~ <html> 
-	~ <head> 
-	~ <title> 
-	~ <body> 
-	~ <h1> to <h6> (Headline)
-	~ <p> (paragraph)
-	~ <a> (link)
-	~ <div> 
-	~ <span> 
-	~ <img> 
-	~ <ol> 
-	~ <ul> 
-	~ <li> 
-	~ <table> 
-	~ <tr> 
-	~ <td> 
-	~ <th> 
-	~ <form> 
-	~ <input> 
-	~ <button> 
-	~ <header>
-	~ <footer>
-	~ <nav>
-	~ <article>
-	~ <aside>
-	~ <audio>
-2. Categorize the tags.
-	
-3. What are standard attributes (except style)
-	- for all tags
-		~ <body>, <html>, <head>, <title>
-	- for the specific categories of tags
-	- for some particular tags only
+
+HTML tags can be broadly categorized based on their function and the type of content they represent. Here's a common categorization:
+
+- Document Structure/Root Tags: These tags define the overall structure of an HTML document.
+	~ <!DOCTYPE html>: Not strictly a tag, but a declaration that defines the document type and HTML version.
+	~ <html>: The root element that encloses the entire HTML document.
+	~ <head>: Contains metadata about the HTML document (not displayed on the page).
+	~ <body>: Contains all the visible content of the HTML document.
+
+- Metadata Tags (within `<head>`): These provide information about the page itself.
+	~ <title>: Sets the title of the document, displayed in the browser tab or window title bar.
+	~ <meta>: Provides metadata like character set, viewport settings, keywords, description, etc.
+	~ <link>: Defines the relationship between the current document and an external resource (e.g., stylesheets, favicons).
+	~ <style>: Contains CSS styling information for the document.
+	~ <script>: Embeds or links to JavaScript code.
+	~ <base>: Specifies the base URL for all relative URLs in the document.
+
+- Content Sectioning Tags (Semantic HTML5): These tags provide semantic structure to the content, making it more meaningful to browsers and assistive technologies.
+	~ <header>: Represents introductory content, typically a group of introductory or navigational aids.
+	~ <nav>: Defines a set of navigation links.
+	~ <main>: Represents the dominant content of the `<body>`.
+	~ <article>: Represents independent, self-contained content (e.g., a blog post, a news article).
+	~ <section>: Defines a section of a document.
+	~ <aside>: Defines content "aside" from the content it is placed in (like a sidebar).
+	~ <footer>: Represents a footer for its nearest sectioning content or sectioning root.
+	~ <address>: Provides contact information for the nearest `<article>` or `<body>` ancestor.
+	~ <h1> to <h6>: Headings of different levels, `<h1>` being the most important.
+	~ <hgroup>: Groups a set of `<h1>` to `<h6>` elements when a heading has multiple levels.
+
+- Text Content Tags: These tags are used for structuring and formatting text.
+	~ <p>: Defines a paragraph.
+	~ <blockquote>: For quoting from an external source (block-level).
+	~ <q>: Defines a short inline quotation.
+	~ <pre>: Represents preformatted text (preserves whitespace and line breaks).
+	~ <hr>: Represents a thematic break (horizontal rule).
+	~ <br>: Inserts a single line break.
+	~ <ol>: Defines an ordered (numbered) list.
+	~ <ul>: Defines an unordered (bulleted) list.
+	~ <li>: Defines a list item.
+	~ <dl>: Defines a description list.
+	~ <dt>: Defines a term in a description list.
+	~ <dd>: Defines a description/definition for a term in a description list.
+	~ <figure>: Represents self-contained content, optionally with a caption.
+	~ <figcaption>: Provides a caption for a `<figure>` element.
+	~ <div>: A generic container for flow content, often used for grouping elements for styling.
+
+- 5. Inline Text Semantics Tags: These tags apply semantic meaning to small parts of text.
+	~ <a>: Defines a hyperlink.
+	~ <em>: Emphasizes text (typically italic).
+	~ <strong>: Indicates strong importance (typically bold).
+	~ <small>: Represents side comments and small print.
+	~ <s>: Renders text with a strikethrough.
+	~ <cite>: Defines the title of a creative work.
+	~ <code>: Displays a fragment of computer code.
+	~ <kbd>: Represents user input (keyboard input).
+	~ <samp>: Represents sample output from a computer program.
+	~ <var>: Represents a variable in a mathematical expression or programming context.
+	~ <dfn>: Represents the defining instance of a term.
+	~ <abbr>: Represents an abbreviation or acronym.
+	~ <data>: Links content with a machine-readable translation.
+	~ <time>: Represents a specific period in time.
+	~ <span>: A generic inline container, often used for styling parts of text.
+	~ <del>: Represents deleted (removed) text.
+	~ <ins>: Represents inserted (added) text.
+	~ <sub>: Defines subscript text.
+	~ <sup>: Defines superscript text.
+	~ <i>: Renders text in italic (for technical terms, foreign words, etc.).
+	~ <b>: Renders text in bold (for drawing attention without conveying importance).
+	~ <u>: Renders text with an underline (deprecated for styling, but still has semantic use for non-textual annotations).
+	~ <mark>: Represents text highlighted for reference.
+	~ <bdi>: Isolates a part of text that might be formatted in a different direction (e.g., right-to-left in a left-to-right document).
+	~ <bdo>: Overrides the current text direction.
+	~ <wbr>: Represents a word break opportunity.
+
+- Image and Multimedia Tags:
+	~ <img>: Embeds an image.
+	~ <audio>: Embeds audio content.
+	~ <video>: Embeds video content.
+	~ <source>: Specifies media resources for `<audio>` and `<video>` elements.
+	~ <track>: Specifies text tracks for media elements (e.g., subtitles).
+	~ <map>: Defines an image map.
+	~ <area>: Defines a clickable area inside an image map.
+
+- Table Content Tags:
+	~ <table>: Creates a table.
+	~ <caption>: Defines the caption for a table.
+	~ <colgroup>: Specifies a group of one or more columns in a table.
+	~ <col>: Specifies column properties for a `<colgroup>`.
+* `<thead>`: Groups header content in a table.
+* `<tbody>`: Groups the body content in a table.
+* `<tfoot>`: Groups footer content in a table.
+* `<tr>`: Defines a table row.
+* `<th>`: Defines a header cell in a table.
+* `<td>`: Defines a standard data cell in a table.
+
+**8. Form Tags:** Used to create interactive forms for user input.
+* `<form>`: Defines an HTML form for user input.
+* `<input>`: Defines an input field (various types: text, password, checkbox, radio, submit, etc.).
+* `<textarea>`: Defines a multi-line text input control.
+* `<button>`: Defines a clickable button.
+* `<select>`: Defines a drop-down list.
+* `<option>`: Defines an option in a drop-down list.
+* `<optgroup>`: Defines a group of options in a drop-down list.
+* `<label>`: Defines a label for an `<input>` element.
+* `<fieldset>`: Groups related elements in a form.
+* `<legend>`: Defines a caption for the `<fieldset>` element.
+* `<datalist>`: Specifies a list of pre-defined options for an `<input>` element.
+* `<output>`: Represents the result of a calculation.
+* `<progress>`: Represents the completion progress of a task.
+* `<meter>`: Represents a scalar measurement within a known range.
+
+**9. Interactive Elements:**
+* `<details>`: Creates a disclosure widget in which information is only visible when the widget is toggled open.
+* `<summary>`: Defines a summary, caption, or legend for a `<details>` element.
+* `<dialog>`: Represents a dialog box or other interactive component.
+
+**10. Embedded Content/External Content Tags:**
+* `<iframe>`: Embeds another HTML document within the current document.
+* `<embed>`: Embeds external content (e.g., plug-ins).
+* `<object>`: Embeds an external resource.
+* `<param>`: Defines parameters for `<object>` elements.
+* `<canvas>`: Used to draw graphics via scripting (usually JavaScript).
+* `<picture>`: Contains zero or more `<source>` elements and one `<img>` element to offer alternative image versions.
+
+## Standard Attributes (Except `style`)
+
+### For All Tags (Global Attributes)
+
+Global attributes can be used on any HTML element, though they may have no effect on some elements.
+* `accesskey`: Specifies a shortcut key to activate or focus the element.
+* `autocapitalize`: Controls whether text input is automatically capitalized.
+* `autofocus`: Specifies that an element should automatically get focus when the page loads (e.g., on an `<input>` field).
+* `class`: Specifies one or more classnames for an element, used for CSS styling and JavaScript manipulation.
+* `contenteditable`: Specifies whether the content of an element is editable by the user.
+* `data-*`: Custom data attributes, allowing you to store extra information on standard HTML elements.
+* `dir`: Specifies the text direction of the element's content (e.g., `ltr` for left-to-right, `rtl` for right-to-left).
+* `draggable`: Specifies whether an element can be dragged.
+* `hidden`: Specifies that an element is not yet, or is no longer, relevant and should be hidden.
+* `id`: Specifies a unique ID for an element, used for CSS styling, JavaScript manipulation, and linking.
+* `inputmode`: Provides a hint to browsers about what kind of virtual keyboard configuration to use when editing the element or its contents.
+* `lang`: Specifies the primary language of the element's content.
+* `spellcheck`: Specifies whether the element should have its spelling and grammar checked.
+* `tabindex`: Specifies the tab order of an element (for keyboard navigation).
+* `title`: Specifies extra information about an element, displayed as a tooltip on hover.
+* `translate`: Specifies whether the content of an element should be translated when the page is localized.
+
+### For Specific Categories of Tags
+
+**1. Form-related Tags (`<form>`, `<input>`, `<textarea>`, `<select>`, `<button>`, etc.):**
+* `name`: Specifies the name of the element (used for form submission and JavaScript).
+* `value`: Specifies the initial value of an input field, button, or option.
+* `disabled`: Specifies that the element should be disabled.
+* `readonly`: Specifies that an input field is read-only (user cannot modify the value).
+* `required`: Specifies that an input field must be filled out before submitting the form.
+* `placeholder`: Provides a hint to the user about what kind of input is expected (for `<input>` and `<textarea>`).
+* `type`: (Specific to `<input>`) Defines the type of input field (e.g., `text`, `password`, `checkbox`, `radio`, `submit`, `email`, `number`, `date`, `file`).
+* `action`: (Specific to `<form>`) Specifies the URL to which the form data will be sent.
+* `method`: (Specific to `<form>`) Specifies the HTTP method to use when submitting the form (e.g., `GET`, `POST`).
+* `autocomplete`: (Specific to `<form>`, `<input>`, `<select>`, `<textarea>`) Specifies whether the browser should automatically complete the input.
+
+**2. Link Tags (`<a>`, `<link>`, `<area>`):**
+* `href`: Specifies the URL of the linked resource.
+* `target`: Specifies where to open the linked document (e.g., `_blank` for a new tab/window, `_self` for the same frame).
+* `rel`: Specifies the relationship between the current document and the linked document (e.g., `stylesheet`, `nofollow`, `prev`, `next`).
+* `hreflang`: Specifies the language of the linked document.
+* `type`: Specifies the media type (MIME type) of the linked resource.
+
+**3. Image and Multimedia Tags (`<img>`, `<audio>`, `<video>`, `<source>`):**
+* `src`: Specifies the path to the media resource (image, audio, video file).
+* `alt`: (Specific to `<img>`) Provides alternative text for an image if it cannot be displayed. Crucial for accessibility.
+* `width`: Specifies the width of the image or video player.
+* `height`: Specifies the height of the image or video player.
+* `controls`: (Specific to `<audio>`, `<video>`) Specifies that the browser should display standard audio/video controls.
+* `autoplay`: (Specific to `<audio>`, `<video>`) Specifies that the audio/video will start playing as soon as it is ready.
+* `loop`: (Specific to `<audio>`, `<video>`) Specifies that the audio/video will start over again when it finishes.
+* `muted`: (Specific to `<audio>`, `<video>`) Specifies that the audio output should be muted.
+* `poster`: (Specific to `<video>`) Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+
+**4. Table Tags (`<table>`, `<td>`, `<th>`):**
+* `colspan`: (Specific to `<td>`, `<th>`) Specifies the number of columns a cell should span.
+* `rowspan`: (Specific to `<td>`, `<th>`) Specifies the number of rows a cell should span.
+* `summary`: (Deprecated, specific to `<table>`) Provides a summary of the table's purpose and structure for non-visual browsers. Use `<caption>` and `aria-describedby` instead.
+
+### For Some Particular Tags Only
+
+* **`<img>`**:
+    * `srcset`: Specifies a list of image source files and their corresponding sizes for different display densities.
+    * `sizes`: Specifies image sizes for different viewport widths when used with `srcset`.
+* **`<input type="checkbox">`, `<input type="radio">`**:
+    * `checked`: Specifies that the input element should be pre-selected.
+* **`<input type="file">`**:
+    * `accept`: Specifies the types of files that the server accepts.
+    * `multiple`: Allows the user to select more than one file.
+* **`<meta>`**:
+    * `charset`: Specifies the character encoding of the document.
+    * `name`: Specifies the name of the metadata (e.g., `description`, `keywords`, `viewport`).
+    * `content`: Specifies the value associated with the `name` or `http-equiv` attribute.
+    * `http-equiv`: Provides an HTTP header for the document.
+* **`<script>`**:
+    * `async`: Specifies that the script should be executed asynchronously.
+    * `defer`: Specifies that the script should be executed after the document has been parsed.
+* **`<iframe>`**:
+    * `seamless`: (Deprecated) Makes the iframe appear as part of the content.
+    * `allowfullscreen`: Allows the iframe content to be displayed in fullscreen mode.
+* **`<ol>`**:
+    * `start`: Specifies the start value of the ordered list.
+    * `reversed`: Specifies that the list items should be displayed in descending order.
 4. Experiment with tags:
 	- Create a page with at least one tag of each category.
 	- Create a page with a variety of form elements.
