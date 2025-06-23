@@ -66,3 +66,23 @@ HTML:
 		> Archive today
 	- Find the first website
 		> https://web.archive.org/web/19961019212557/http://bnsf.com/
+
+1. By using the inspector in the developer tools (f11) of the browser,  figure out what happens when the browser loads:
+	> a simple text file (Extension: ".txt")?
+		~ file:///C:/Users/alina/Desktop/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.txt
+	> an HTML file (Extension ".html")?
+		~ file:///C:/Users/alina/Desktop/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%20(2).html
+	> compare the internal representations
+		~ HTML doesn't jump to the next line automatically 
+2. What is the structure of an HTML file?
+	> Build a representation of that structure using simple keychains, the simple hole to connect a label to its parent and the ring to connect children. 
+	Write the tag names on the labels.  
+		~ done
+	> create a file with a proper structure using tags.
+3. Find out...
+	> if the display of files contents in the browser changes, when you change the file (without reloading)
+		~ nothing changes
+	> how to change the contents displayed without changing the file 
+		~ use the dev tools and you can change whatever you like in the content without letting it affect the file
+	> what the DOM is
+		~ an internal representation; the Binary code from the browser is displayed as text, not 0 and 1
