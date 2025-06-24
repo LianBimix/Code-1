@@ -21,6 +21,7 @@ p {
 a {
   color: #465194;
   text-decoration: none; /* Removes underline from links */
+  text-align: center;
 }
 body {
   background-color: #aad3ae; /* Light gray background for better contrast */
