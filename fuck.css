@@ -11,8 +11,11 @@ p {
     color: #3c3f78;
     text-align: center;
 }
-input{
-    size: 20px;
-    color: #c5aadbbf;
-    transition: ease-in-out 0.3s;
+img{
+    align-content: center;
+    width: 500px;
+    height: auto;
+    animation: alternate;
+    animation-duration: 10s;
 }
+
