@@ -1,0 +1,33 @@
+ input {
+  font-size: 20px;
+  color: #c5aadbbf;
+}
+::placeholder {
+  color: #7e97ee8c;
+  opacity: 0.75; /* Adjusts the visibility of the placeholder text */
+  border-color: #569f9b;
+    border-width: 5px;
+}
+h1 {
+  font-size: 35px;
+  color: #325d7a;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  color: #7f72b9;
+  text-align: center;
+}
+a {
+  color: #465194;
+  text-decoration: none; /* Removes underline from links */
+}
+body {
+  background-color: #aad3ae; /* Light gray background for better contrast */
+}
+checkbox {
+  width: 25px;
+  height: 25px;
+  accent-color: #c77cd7; /* Custom color for checkbox */
+  fill: #d23b70;
+}
