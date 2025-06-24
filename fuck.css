@@ -1,0 +1,18 @@
+h1 {
+    font-size: 35px;
+    color: #82bb8f;
+    text-align: center;
+}
+body {
+    background-color: #866bb7;
+}
+p {
+    font-size: 16px;
+    color: #3c3f78;
+    text-align: center;
+}
+input{
+    size: 20px;
+    color: #c5aadbbf;
+    transition: ease-in-out 0.3s;
+}
