@@ -12,10 +12,16 @@ p {
     text-align: center;
 }
 img{
-    align-content: center;
+    align-self: center;
     width: 500px;
     height: auto;
-    animation: alternate;
+     animation: infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+input {
+    animation: infinite;
+    animation-iteration-count: infinite;
     animation-duration: 10s;
 }
 
