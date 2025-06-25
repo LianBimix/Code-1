@@ -14,3 +14,26 @@ when Ralf appears:
 1. ignore -> dies 
 2. learn German -> die of depression
 3. just follow him -> happy end
+
+
+NIM GAME Lösungsweg: 
+Ziel = nicht das letzte Lämpchen erlischen lassen! 
+  versuchen, dass der Gegner (Computer) das letzte Lämpchen erlischen lässt. 
+gewünscher Output bei zb. 4,7,7,2: 
+  1,1,1,1
+1. schauen, dass die niedrigste Zahl (hier 2) als erstes auf 1 geht, damit dass der Gegner nicht mehr machen kann 
+ -> 2-1 = 1 
+  -> 4,7,7,1
+2. Gegner macht was, vermutlich an 4,7 oder 7.
+  -> 4,1,7,1
+3. schauen, dass man keine Reihe auswählt, die schon bei 1 ist!! Von belieber Zahl die >2 ist 1 abziehen
+-> 4-1 = 3
+  -> 3,1,7,1
+4.1. Gegner wird eine Zahl auf 1 setzen:
+  -> 1,1,7,1
+4.2. Gegner wird keine Zahl auf 1 setzen:
+  -> 2,1,7,1 
+5.1. setze die letzte Zahl auf 1
+  -> 1,1,1,1
+5.2. setze eine Zahl >2 -1: 
+  -> 1,1,6,1
