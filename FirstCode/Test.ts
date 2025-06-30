@@ -5,3 +5,5 @@ let v: number=1;
 let y: number;
 y = v + 1;
 console.log(y);
+var userInput = prompt("Enter a number:");
+console.log
