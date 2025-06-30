@@ -8,3 +8,4 @@ y = v + 1;
 console.log(y);
 var userInput = prompt("Enter a number:");
 console.log;
+//# sourceMappingURL=Test.js.map
