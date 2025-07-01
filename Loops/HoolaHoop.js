@@ -21,3 +21,4 @@ let o = { x: 1, y: 2 };
 for (let k = 0; k < o.y; k++) {
     console.log(k);
 }
+//# sourceMappingURL=HoolaHoop.js.map
