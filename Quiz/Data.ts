@@ -2,41 +2,41 @@ namespace Quizz {
     export let data: any = [
 
         {
-            qu1: "What is the capital of Germany? ;)",
-            answer1: [
+            question: "What is the capital of Germany? ;)",
+            answers: [
                 "Paris",
                 "Berlin",
                 "Furtwangen",
                 "Rome",
                 "London",
             ],
-            solution1: [2],
+            solution: [2],
         },
         {
-            qu2: "What drink do the majority of GMB students drink?",
-            answer2: [
+            question: "What drink do the majority of GMB students drink?",
+            answers: [
                 "Tea",
                 "Energy Drink",
                 "Water",
                 "Soda",
                 "Coffee",
             ],
-            solution2: [1, 4],
+            solution: [1, 4],
         },
         {
-            qu3: "How many paper figures are in the M-Bau?",
-            answer3: [
+            question: "How many paper figures are in the M-Bau?",
+            answer: [
                 "2",
                 "5",
                 "3",
                 "4",
                 "there are no paper figures!",
             ],
-            solution3: [],
+            solution: [],
         },
         {
-            qu4: "When does the Mensa open and close?",
-            answer4: [
+            question: "When does the Mensa open and close?",
+            answers: [
                 "8:00 - 13:45",
                 "11:00 - 14:00",
                 "11:00 - 14:00",
@@ -45,17 +45,17 @@ namespace Quizz {
                 "11:30 - 13:45",
                 "10:30 - 13:00",
             ],
-            solution4: [4],
+            solution: [4],
         },
         {
-            qu5: "Monster energy, Rockstar or Red Bull? (The answer was evaluated by a survey of 7 Students)",
-            answer5: [
+            question: "Monster energy, Rockstar or Red Bull? (The answer was evaluated by a survey of 7 Students)",
+            answers: [
                 "Monster",
                 "Rockstar",
                 "Red Bull",
                 "None of them",
             ],
-            solution5: [2],
+            solution: [2],
         }
     ];
 }
