@@ -1,0 +1,16 @@
+html, body {
+    margin: 0px;
+    padding: 0px; 
+    height: 100%;
+}
+body {
+    background-color: black;
+}
+span {
+    position: fixed; 
+    background-color: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%; 
+    transform: matrix(20, 0, 0, 20, 500, 300);
+}
