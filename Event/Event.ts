@@ -9,31 +9,45 @@ namespace Ballz {
 
     window.addEventListener("load", hndLoad);
     let balls: Ball[] = [];
+    let timePreviousFrame: number = Date.now();
+    document.body.addEventListener
 
     function hndLoad(): void {
-        for (let i: number = 0; i<10; i++) {
-            const ball: Ball = {
+        for (let i: number = 0; i<100; i++) {
+            let newBall: Ball = {
                 element: document.createElement("span"),
-                position: { x: 100, y: 100 },
-                velocity: { x: 10, y: 10 },
+                position: { 
+                    x: Math.random()*window.innerWidth,
+                    y: Math.random()*window.innerHeight,
+                },
+                velocity: { 
+                    x:(Math.random()-0.5)*20,
+                    y:(Math.random()-0.5)*20,
+                },
             }
-            document.body.appendChild(ball.element);
-            balls.push(ball);
+            document.body.appendChild(newBall.element);
+            balls.push(newBall);
         }
         move();
     }
 
 
     function move(): void {
+        const timeCurrent: number = Date.now(); 
+        let timeDelta: number = timeCurrent - timePreviousFrame;
+        timeDelta/=50;
         for (let ball of balls) {
-            ball.position.x -= ball.velocity.x;
-            ball.position.y += ball.velocity.y;
+            ball.position.x -= ball.velocity.x*timeDelta;
+            ball.position.y += ball.velocity.y*timeDelta;
 
             ball.position.x = (ball.position.x + window.innerWidth) % window.innerWidth;
             ball.position.y = (ball.position.y + window.innerHeight) % window.innerHeight;
 
             ball.element.style.transform = "matrix(20, 0, 0, 20, " + ball.position.x + ", " + ball.position.y;
         }
-        setTimeout(move, 16);
+        timePreviousFrame = timeCurrent;
+        requestAnimationFrame(move);
     }
+
+
 }
