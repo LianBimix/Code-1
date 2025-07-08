@@ -7,6 +7,7 @@ namespace Ballz {
         velocity: Vector,
         id: number;
     }
+    let b: number;
 
     window.addEventListener("load", hndLoad);
     let balls: Ball[] = [];
@@ -48,9 +49,20 @@ namespace Ballz {
             }
         }
     }
+
     function checkCollitionAll(): void {
         for (const a in balls) {
-            for (let b: number = Number(a) + 1; b < balls.length; b++);
+            for (let b: number = Number(a) + 1; b < balls.length; b++); {
+                //let mathA = Math.pow(balls[a].position.x - balls[b].position.x, 2);
+                //let mathB = Math.pow(balls[a].position.y - balls[b].position.y, 2);
+                //let distance: number = Math.sqrt(mathA + mathB);
+                //let threshhold: number = 10;
+                //if (distance <= threshhold) {
+                //    balls[a].velocity.y = -1 * (balls[a].velocity.y);
+                //    balls[b].velocity.x = -1 * (balls[b].velocity.x);
+                //}
+                //else { }
+            }
         }
     }
     function update() {
